@@ -1,10 +1,11 @@
 import { MapPin, Phone } from "lucide-react";
+import Link from "next/link";
 
 const links = [
-  { href: "#ueber-uns", label: "Über uns" },
-  { href: "#speisekarte", label: "Speisekarte" },
-  { href: "#bewertungen", label: "Bewertungen" },
-  { href: "#kontakt", label: "Kontakt" },
+  { href: "/#ueber-uns", label: "Über uns" },
+  { href: "/#speisekarte", label: "Speisekarte" },
+  { href: "/#bewertungen", label: "Bewertungen" },
+  { href: "/#kontakt", label: "Kontakt" },
 ];
 
 export function Footer() {
@@ -13,9 +14,9 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
         <div className="grid gap-10 sm:grid-cols-3">
           <div>
-            <a href="#top" className="font-display text-2xl text-cream-50">
+            <Link href="/#top" className="font-display text-2xl text-cream-50">
               Stadt<span className="text-gold-400">krone</span>
-            </a>
+            </Link>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-cream-100/60">
               Café &amp; Restaurant in der Altstadt von Monschau — hausgemachte
               Küche, herzlicher Service.
@@ -64,6 +65,9 @@ export function Footer() {
           <div className="flex items-center gap-4">
             <a href="/impressum" className="hover:text-gold-300">
               Impressum
+            </a>
+            <a href="/datenschutz" className="hover:text-gold-300">
+              Datenschutz
             </a>
             <span>Monschau, Eifel</span>
           </div>

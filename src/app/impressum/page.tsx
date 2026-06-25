@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ImpressumPage() {
   return (
     <>
-      <Navbar />
+      <Navbar solid />
       <main className="bg-cream-50 pt-32 pb-24">
         <div className="mx-auto max-w-3xl px-6 sm:px-8">
           <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.3em] text-gold-600">
@@ -40,10 +40,7 @@ export default function ImpressumPage() {
               <h2 className="font-display text-xl text-ink-900">
                 Vertreten durch
               </h2>
-              <p className="mt-2 italic text-ink-500">
-                [Bitte Name der Inhaberin/des Inhabers oder der
-                Geschäftsführung ergänzen]
-              </p>
+              <p className="mt-2">David Tauber</p>
             </section>
 
             <section>
@@ -52,9 +49,12 @@ export default function ImpressumPage() {
                 Telefon: 0173 2521730
                 <br />
                 E-Mail:{" "}
-                <span className="italic text-ink-500">
-                  [Bitte E-Mail-Adresse ergänzen]
-                </span>
+                <a
+                  href="mailto:David.tauber@icloud.com"
+                  className="text-gold-600 underline hover:text-gold-700"
+                >
+                  David.tauber@icloud.com
+                </a>
               </p>
             </section>
 
