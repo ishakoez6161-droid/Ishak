@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-wine-950: #190406;
+  --color-wine-900: #270709;
+  --color-wine-850: #320a0d;
+  --color-wine-800: #3d0f13;
+  --color-wine-700: #55171c;
+  --color-wine-600: #6e2026;
+
+  --color-gold-200: #f1e3bd;
+  --color-gold-300: #e6d09c;
+  --color-gold-400: #d7b977;
+  --color-gold-500: #c39e54;
+  --color-gold-600: #a8813e;
+  --color-gold-700: #846331;
+
+  --color-cream-50: #fdfbf6;
+  --color-cream-100: #f8f1e4;
+  --color-cream-200: #efe3cb;
+
+  --color-ink-900: #19140f;
+  --color-ink-700: #3a322a;
+  --color-ink-500: #6b6055;
+
+  --font-display: var(--font-playfair);
+  --font-sans: var(--font-manrope);
+
+  --shadow-gold: 0 0 0 1px rgba(195, 158, 84, 0.25);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-gold-500);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-cream-50);
+    color: var(--color-ink-900);
+    font-family: var(--font-sans);
+  }
+
+  ::selection {
+    background: var(--color-gold-400);
+    color: var(--color-wine-950);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass {
+    background: rgba(25, 5, 7, 0.55);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+  }
+
+  .glass-light {
+    background: rgba(253, 251, 246, 0.6);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #f1e3bd 0%, #c39e54 50%, #a8813e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .leader-line {
+    background-image: radial-gradient(
+      circle,
+      currentColor 1px,
+      transparent 1.5px
+    );
+    background-size: 7px 7px;
+    background-position: bottom 4px left 0;
+  }
+
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.08;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
