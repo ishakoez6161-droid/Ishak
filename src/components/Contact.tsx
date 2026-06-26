@@ -66,7 +66,7 @@ export function Contact() {
             <div className="h-full min-h-[360px] overflow-hidden rounded-[1.75rem] border border-gold-500/15 shadow-[0_8px_30px_rgba(60,20,10,0.08)]">
               <iframe
                 title="Anfahrt zur Stadtkrone, Markt 2, 52156 Monschau"
-                src="https://www.google.com/maps?q=Markt+2,+52156+Monschau&output=embed"
+                src="https://www.google.com/maps?q=Stadtkrone+Café+%26+Restaurant,+Markt+2,+52156+Monschau&output=embed"
                 className="h-full min-h-[360px] w-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
