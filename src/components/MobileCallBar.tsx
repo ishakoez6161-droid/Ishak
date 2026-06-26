@@ -20,7 +20,7 @@ export function MobileCallBar() {
       className="glass fixed inset-x-0 bottom-0 z-40 flex gap-2.5 border-t border-cream-50/10 p-3 lg:hidden"
     >
       <a
-        href="tel:+491732521730"
+        href="tel:+491633450894"
         className="flex flex-1 items-center justify-center gap-2 rounded-full border border-cream-50/25 py-3 text-sm font-semibold text-cream-50"
       >
         <Phone className="h-4 w-4" /> Anrufen
@@ -29,7 +29,7 @@ export function MobileCallBar() {
         href="#kontakt"
         className="flex flex-1 items-center justify-center gap-2 rounded-full bg-gold-400 py-3 text-sm font-semibold text-wine-950"
       >
-        <Calendar className="h-4 w-4" /> Reservieren
+        <Calendar className="h-4 w-4" /> Kontakt
       </a>
     </motion.div>
   );
