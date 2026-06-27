@@ -21,7 +21,7 @@ export function Contact() {
         <SectionHeading
           eyebrow="Kontakt & Anfahrt"
           title="Wir freuen uns auf Ihren Besuch"
-          description="In der Laufenstraße in Monschau — gerne auch zum Mitnehmen telefonisch bestellen."
+          description="Direkt am Markt in der Monschauer Altstadt — telefonische Reservierung empfohlen."
         />
 
         <div className="mt-14 grid gap-10 lg:grid-cols-5">
@@ -33,7 +33,7 @@ export function Contact() {
                   <div>
                     <p className="font-display text-lg">Adresse</p>
                     <p className="mt-1 text-sm text-cream-100/75">
-                      Laufenstraße 60, 52156 Monschau
+                      Markt 2, 52156 Monschau
                     </p>
                   </div>
                 </div>
@@ -42,10 +42,10 @@ export function Contact() {
                   <div>
                     <p className="font-display text-lg">Telefon</p>
                     <a
-                      href="tel:+491633450894"
+                      href="tel:+491732521730"
                       className="mt-1 inline-block text-sm text-cream-100/75 hover:text-gold-300"
                     >
-                      0163 3450894
+                      0173 2521730
                     </a>
                   </div>
                 </div>
@@ -82,10 +82,10 @@ export function Contact() {
               </div>
 
               <a
-                href="tel:+491633450894"
+                href="tel:+491732521730"
                 className="mt-10 inline-flex items-center justify-center rounded-full bg-gold-400 px-6 py-3.5 text-sm font-semibold text-wine-950 transition-transform duration-300 hover:scale-[1.02]"
               >
-                Jetzt anrufen &amp; bestellen
+                Jetzt anrufen &amp; reservieren
               </a>
             </div>
           </Reveal>
@@ -93,8 +93,8 @@ export function Contact() {
           <Reveal delay={0.1} className="lg:col-span-3">
             <div className="h-full min-h-[360px] overflow-hidden rounded-[1.75rem] border border-gold-500/15 shadow-[0_8px_30px_rgba(60,20,10,0.08)]">
               <iframe
-                title="Anfahrt zu Bal-Mondo 60, Laufenstraße 60, 52156 Monschau"
-                src="https://www.google.com/maps?q=Bal-Mondo+60,+Laufenstraße+60,+52156+Monschau&output=embed"
+                title="Anfahrt zur Stadtkrone, Markt 2, 52156 Monschau"
+                src="https://www.google.com/maps?q=Stadtkrone+Café+%26+Restaurant,+Markt+2,+52156+Monschau&output=embed"
                 className="h-full min-h-[360px] w-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

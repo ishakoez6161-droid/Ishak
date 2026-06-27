@@ -9,7 +9,6 @@ import { cn } from "@/lib/utils";
 const links = [
   { href: "/#ueber-uns", label: "Über uns" },
   { href: "/#speisekarte", label: "Speisekarte" },
-  { href: "/#galerie", label: "Galerie" },
   { href: "/#bewertungen", label: "Bewertungen" },
   { href: "/#kontakt", label: "Kontakt" },
 ];
@@ -36,7 +35,7 @@ export function Navbar({ solid = false }: { solid?: boolean }) {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-12">
         <Link href="/#top" className="font-display text-2xl tracking-wide text-cream-50">
-          Bal-Mondo <span className="text-gold-400">60</span>
+          Stadt<span className="text-gold-400">krone</span>
         </Link>
 
         <ul className="hidden items-center gap-9 lg:flex">
@@ -55,17 +54,17 @@ export function Navbar({ solid = false }: { solid?: boolean }) {
 
         <div className="hidden items-center gap-4 lg:flex">
           <a
-            href="tel:+491633450894"
+            href="tel:+491732521730"
             className="flex items-center gap-2 text-sm font-medium text-cream-100/90 transition-colors hover:text-gold-300"
           >
             <Phone className="h-4 w-4" />
-            0163 3450894
+            0173 2521730
           </a>
           <Link
             href="/#kontakt"
             className="rounded-full border border-gold-400/70 bg-gold-400/10 px-5 py-2.5 text-sm font-semibold text-gold-200 transition-all duration-300 hover:bg-gold-400 hover:text-wine-950"
           >
-            Kontakt
+            Tisch reservieren
           </Link>
         </div>
 
@@ -99,17 +98,17 @@ export function Navbar({ solid = false }: { solid?: boolean }) {
                 </a>
               ))}
               <a
-                href="tel:+491633450894"
+                href="tel:+491732521730"
                 className="mt-3 flex items-center justify-center gap-2 rounded-full border border-cream-50/20 py-3 text-sm font-medium text-cream-100"
               >
-                <Phone className="h-4 w-4" /> 0163 3450894
+                <Phone className="h-4 w-4" /> 0173 2521730
               </a>
               <Link
                 href="/#kontakt"
                 onClick={() => setOpen(false)}
                 className="mt-2 rounded-full bg-gold-400 py-3 text-center text-sm font-semibold text-wine-950"
               >
-                Kontakt
+                Tisch reservieren
               </Link>
             </div>
           </motion.div>

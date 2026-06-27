@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Impressum",
-  description: "Impressum von Bal-Mondo 60 in Monschau.",
+  description: "Impressum der Stadtkrone Café & Restaurant in Monschau.",
   robots: { index: true, follow: true },
 };
 
@@ -28,9 +28,9 @@ export default function ImpressumPage() {
                 Angaben gemäß § 5 TMG
               </h2>
               <p className="mt-2">
-                Bal-Mondo 60
+                Stadtkrone Café &amp; Restaurant
                 <br />
-                Laufenstraße 60
+                Markt 2
                 <br />
                 52156 Monschau
               </p>
@@ -40,29 +40,22 @@ export default function ImpressumPage() {
               <h2 className="font-display text-xl text-ink-900">
                 Vertreten durch
               </h2>
-              <p className="mt-2">Nimettin Bal (Geschäftsführer)</p>
+              <p className="mt-2">David Tauber</p>
             </section>
 
             <section>
               <h2 className="font-display text-xl text-ink-900">Kontakt</h2>
               <p className="mt-2">
-                Telefon: 0163 3450894
+                Telefon: 0173 2521730
                 <br />
                 E-Mail:{" "}
                 <a
-                  href="mailto:nimettinbal9@gmail.com"
+                  href="mailto:David.tauber@icloud.com"
                   className="text-gold-600 underline hover:text-gold-700"
                 >
-                  nimettinbal9@gmail.com
+                  David.tauber@icloud.com
                 </a>
               </p>
-            </section>
-
-            <section>
-              <h2 className="font-display text-xl text-ink-900">
-                Umsatzsteuer-Identifikationsnummer
-              </h2>
-              <p className="mt-2">[USt-IdNr., falls vorhanden]</p>
             </section>
 
             <section>

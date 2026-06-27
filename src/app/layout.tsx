@@ -15,39 +15,39 @@ const manrope = Manrope({
   display: "swap",
 });
 
-const siteUrl = "https://balmondo60-monschau.de";
+const siteUrl = "https://stadtkrone-monschau.de";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Bal-Mondo 60 – Döner-Restaurant in Monschau",
-    template: "%s | Bal-Mondo 60 Monschau",
+    default: "Stadtkrone – Café & Restaurant in Monschau",
+    template: "%s | Stadtkrone Monschau",
   },
   description:
-    "Bal-Mondo 60 in der Laufenstraße 60 in Monschau: frischer Drehspieß, Pide, Pizza, Falafel und türkische Klassiker. Montag, Mittwoch bis Sonntag von 12:00 bis 21:00 Uhr geöffnet, dienstags Ruhetag.",
+    "Stadtkrone Café & Restaurant am Markt in Monschau: hausgemachte Schnitzel, Pasta, Burger und Desserts in historischer Fachwerk-Atmosphäre. Jetzt Tisch reservieren.",
   keywords: [
-    "Bal-Mondo 60",
-    "Döner Monschau",
+    "Stadtkrone Monschau",
     "Restaurant Monschau",
-    "Türkisches Restaurant Monschau",
-    "Drehspieß Monschau",
+    "Café Monschau",
+    "Schnitzel Monschau",
+    "Markt Monschau Essen",
   ],
-  authors: [{ name: "Bal-Mondo 60" }],
+  authors: [{ name: "Stadtkrone Café & Restaurant" }],
   openGraph: {
-    title: "Bal-Mondo 60 – Döner-Restaurant in Monschau",
+    title: "Stadtkrone – Café & Restaurant in Monschau",
     description:
-      "Frischer Drehspieß, Pide, Pizza und türkische Klassiker in der Laufenstraße 60 in Monschau.",
+      "Hausgemachte Küche in historischer Fachwerk-Atmosphäre direkt am Markt in Monschau.",
     url: siteUrl,
-    siteName: "Bal-Mondo 60",
+    siteName: "Stadtkrone Monschau",
     images: [{ url: "/images/fassade.jpg", width: 1145, height: 920 }],
     locale: "de_DE",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bal-Mondo 60 – Döner-Restaurant in Monschau",
+    title: "Stadtkrone – Café & Restaurant in Monschau",
     description:
-      "Frischer Drehspieß, Pide, Pizza und türkische Klassiker in der Laufenstraße 60 in Monschau.",
+      "Hausgemachte Küche in historischer Fachwerk-Atmosphäre direkt am Markt in Monschau.",
     images: ["/images/fassade.jpg"],
   },
   robots: { index: true, follow: true },
@@ -56,14 +56,14 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Restaurant",
-  name: "Bal-Mondo 60",
+  name: "Stadtkrone Café & Restaurant",
   image: `${siteUrl}/images/fassade.jpg`,
-  servesCuisine: ["Turkish", "Döner", "Pizza", "Mediterranean"],
+  servesCuisine: ["German", "European", "Café"],
   priceRange: "€€",
-  telephone: "+49 163 3450894",
+  telephone: "+49 173 2521730",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Laufenstraße 60",
+    streetAddress: "Markt 2",
     postalCode: "52156",
     addressLocality: "Monschau",
     addressCountry: "DE",
@@ -83,11 +83,6 @@ const jsonLd = {
       closes: "21:00",
     },
   ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.7",
-    reviewCount: "275",
-  },
   url: siteUrl,
 };
 

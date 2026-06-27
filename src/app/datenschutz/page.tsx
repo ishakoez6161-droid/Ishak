@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung",
-  description: "Datenschutzerklärung von Bal-Mondo 60 in Monschau.",
+  description: "Datenschutzerklärung der Stadtkrone Café & Restaurant in Monschau.",
   robots: { index: true, follow: true },
 };
 
@@ -32,22 +32,22 @@ export default function DatenschutzPage() {
                 im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:
               </p>
               <p className="mt-2">
-                Nimettin Bal
+                David Tauber
                 <br />
-                Bal-Mondo 60
+                Stadtkrone Café &amp; Restaurant
                 <br />
-                Laufenstraße 60
+                Markt 2
                 <br />
                 52156 Monschau
                 <br />
-                Telefon: 0163 3450894
+                Telefon: 0173 2521730
                 <br />
                 E-Mail:{" "}
                 <a
-                  href="mailto:nimettinbal9@gmail.com"
+                  href="mailto:David.tauber@icloud.com"
                   className="text-gold-600 underline hover:text-gold-700"
                 >
-                  nimettinbal9@gmail.com
+                  David.tauber@icloud.com
                 </a>
               </p>
             </section>

@@ -14,244 +14,239 @@ export type MenuCategory = {
 
 export const menuCategories: MenuCategory[] = [
   {
-    id: "vorspeisen",
-    label: "Vorspeisen",
-    intro: "Frisch zubereitet und ideal zum Teilen.",
+    id: "schnitzel",
+    label: "Hausgemachte Schnitzel",
+    intro: "Frisch paniert und nach Hausrezept zubereitet.",
     items: [
       {
-        name: "Gemischter Vorspeisenteller",
+        name: "Bratwurst",
+        description: "Mit Pommes frites und Salat",
+        price: 14.9,
+      },
+      {
+        name: "Currywurst",
+        description: "Mit Pommes frites und Salat",
+        price: 15.9,
+      },
+      {
+        name: "Wienerschnitzel",
+        description: "Schnitzel Wiener Art mit Pommes frites und Salat",
+        price: 16.9,
+      },
+      {
+        name: "Zigeunerschnitzel",
         description:
-          "Scharfe Paste, Auberginenpüree, Möhrenpüree, Joghurt mit Minze, Hummus, Kisir, dazu Brot (klein oder groß)",
-        price: 15.0,
+          "Schnitzel in Tomatensauce mit Zwiebel, Paprika, Pommes frites und Salat",
+        price: 17.9,
       },
       {
-        name: "Sigara Böregi",
-        description: "4 Stück türkische Blätterteigröllchen mit Schafskäse gefüllt",
-        price: 7.5,
+        name: "Monschauer-Senf-Schnitzel",
+        description: "Schnitzel in einer Senfrahmsauce mit Pommes frites und Salat",
+        price: 19.9,
+        tag: "Hausspezialität",
       },
       {
-        name: "Saksuka",
-        description: "Verschiedenes Gemüse frisch in der Pfanne zubereitet und in Tomatensauce serviert",
+        name: "Pfefferschnitzel",
+        description: "Schnitzel in einer Pfefferrahmsauce mit Pommes frites und Salat",
+        price: 17.9,
+      },
+      {
+        name: "Cordon Bleu",
+        description: "Mit Pommes frites und Salat (Hähnchen)",
+        price: 18.9,
+      },
+      {
+        name: "Jägerschnitzel",
+        description: "Schnitzel in einer Champignoncream mit Pommes frites und Salat",
+        price: 17.9,
+      },
+    ],
+  },
+  {
+    id: "salate-suppen",
+    label: "Salate & Suppen",
+    items: [
+      {
+        name: "Gemischter Salat",
+        description: "Mit Gurken, Tomaten und Zwiebeln",
+        price: 11.9,
+      },
+      {
+        name: "Stadtkrone Salat",
+        description: "Gemischter Salat mit Käse, Schinken, Thunfisch und Zwiebeln",
+        price: 15.9,
+      },
+      {
+        name: "Eifeler Salat",
+        description: "Gemischter Salat mit Käse, Schinken, Ei und Zwiebeln",
+        price: 15.9,
+      },
+      {
+        name: "Hähnchen Salat",
+        description: "Gemischter Salat mit Hähnchenstreifen",
+        price: 17.9,
+      },
+      {
+        name: "Tomaten Mozzarella",
+        description: "Mit Basilikum und Balsamicocreme garniert",
+        price: 14.9,
+      },
+      {
+        name: "Kleiner Beilagensalat",
+        description: "Mit Gurke, Tomate und Zwiebel",
+        price: 6.9,
+      },
+      { name: "Tomatensuppe", price: 9.5 },
+      { name: "Gemüsesuppe", price: 9.9 },
+    ],
+  },
+  {
+    id: "pasta-burger",
+    label: "Pasta & Burger",
+    items: [
+      {
+        name: "Pomodoro",
+        description: "Tomatensauce verfeinert mit nativem Olivenöl und Knoblauch",
+        price: 14.9,
+      },
+      {
+        name: "Pesto Verde",
+        description:
+          "Pesto, Basilikum, nativem Olivenöl, gerösteten Pinienkernen und Knoblauch",
+        price: 14.9,
+      },
+      {
+        name: "Carbonara Lachs",
+        description: "In cremiger Sauce mit geräuchertem Lachs",
+        price: 14.9,
+      },
+      {
+        name: "Crunchy Chicken Burger",
+        description: "Mit Pommes",
+        price: 14.9,
+      },
+      { name: "Cheeseburger", description: "Mit Pommes", price: 17.9 },
+      { name: "BBQ Bacon Burger", description: "Mit Pommes", price: 18.9 },
+      { name: "Cheese Smash Burger", description: "Mit Pommes", price: 15.9 },
+      {
+        name: "Double Cheese Smash Burger",
+        description: "Mit Pommes",
+        price: 21.9,
+      },
+      {
+        name: "Stadtkrone Mega Burger",
+        description: "Mit Pommes",
+        price: 25.9,
+        tag: "Für den großen Hunger",
+      },
+    ],
+  },
+  {
+    id: "kinder",
+    label: "Kinderteller",
+    items: [
+      {
+        name: "Kinder Schnitzel",
+        description: "Mit Pommes frites, Ketchup und Mayonnaise",
+        price: 8.9,
+      },
+      {
+        name: "Kinder Bratwurst",
+        description: "Mit Pommes frites, Ketchup und Mayonnaise",
+        price: 8.9,
+      },
+      {
+        name: "Pommes Spezial",
+        description: "Mit Ketchup, Mayonnaise und Röstzwiebeln",
         price: 8.5,
       },
-    ],
-  },
-  {
-    id: "suppen",
-    label: "Suppen",
-    items: [
-      { name: "Tomatensuppe", price: 5.5 },
-      { name: "Türkische Linsensuppe", price: 6.0 },
-      { name: "Hähnchensuppe", price: 6.5 },
-    ],
-  },
-  {
-    id: "pommes-beilagen",
-    label: "Pommes & Beilagen",
-    items: [
-      { name: "Pommes klein", price: 3.0 },
-      { name: "Pommes groß", price: 4.0 },
-      { name: "Portion Reis", price: 4.0 },
-      { name: "Ketchup/Mayo", price: 1.0 },
-      { name: "Cacik", description: "Joghurt-Knoblauch-Soße", price: 1.5 },
-    ],
-  },
-  {
-    id: "falafel",
-    label: "Falafel",
-    items: [
-      { name: "Falafel Brot", description: "Mit Falafel, Soße, Salat im Brot", price: 7.0 },
-      { name: "Falafel Box", description: "Mit Falafel, Pommes und Soße", price: 7.5 },
-      { name: "Falafel Dürüm", description: "Mit Falafel, Salat und Soße im Wrap", price: 7.5 },
-      { name: "Falafelteller", description: "Dazu Reis oder Pommes und Salat", price: 15.0 },
-    ],
-  },
-  {
-    id: "salate",
-    label: "Salate",
-    items: [
-      { name: "Gemischter Salat", price: 13.0 },
-      { name: "Bauernsalat", price: 11.0 },
-      { name: "Hähnchensalat", price: 16.5 },
-      { name: "Thunfischsalat", price: 13.0 },
-    ],
-  },
-  {
-    id: "pide",
-    label: "Pide – Türk. Teigschiffchen",
-    items: [
-      { name: "Pide mit Schafskäse", price: 11.0 },
-      { name: "Pide mit Gouda", price: 11.0 },
-      { name: "Pide mit Gehacktem", price: 12.0 },
-      { name: "Pide mit Spinat & Schafskäse", price: 12.0 },
-      { name: "Pide mit Sucuk", price: 12.0 },
-    ],
-  },
-  {
-    id: "lahmacun",
-    label: "Lahmacun – Türk. Hackfleischpizza",
-    items: [
-      { name: "Lahmacun ohne Alles", price: 3.5 },
-      { name: "Lahmacun mit Salat", price: 5.0 },
-      { name: "Lahmacun mit Drehspießfleisch", price: 12.0 },
-    ],
-  },
-  {
-    id: "pizza",
-    label: "Pizza",
-    intro: "Mit Tomatensauce, Käse und Oregano belegt.",
-    items: [
-      { name: "Margherita", price: 10.0 },
-      { name: "Salami", price: 12.0 },
-      { name: "Tonno", description: "Mit Thunfisch", price: 14.0 },
-      { name: "Funghi", description: "Mit Champignons", price: 12.0 },
-      { name: "Schinken", price: 12.0 },
-      { name: "Sucuk", price: 13.0 },
-      { name: "Vegetarisch", price: 13.0 },
-      { name: "Spinat", price: 12.0 },
-      { name: "Drehspieß", description: "Mit Drehspießfleisch und Zwiebeln", price: 14.0 },
-      { name: "Broccoli", price: 12.0 },
-      { name: "Hawaii", description: "Mit Schinken und Ananas", price: 13.0 },
-    ],
-  },
-  {
-    id: "drehspiess",
-    label: "Drehspieß (Döner)",
-    items: [
-      { name: "Drehspieß-Tasche", description: "Mit Drehspießfleisch, Salat und Soße, im Brot", price: 7.0 },
-      { name: "Drehspieß-Dürüm", description: "Mit Drehspießfleisch, Salat und Soße, im Wrap", price: 7.5 },
-      { name: "Pomm-Drehspieß", description: "Mit Drehspießfleisch und Soße", price: 6.0 },
-      { name: "Drehspießteller Komplett", description: "Mit Pommes oder Reis und Salat", price: 16.5 },
-      { name: "Drehspieß überbacken", description: "Mit Pommes oder Reis und Salat", price: 17.5 },
       {
-        name: "Drehspieß Iskender Art",
-        description:
-          "Auf geröstetem Fladenbrot mit Knoblauchjoghurt, pikanter Tomatensauce und zerlassener Butter",
-        price: 18.0,
+        name: "Hähnchen Nuggets",
+        description: "Mit Pommes frites, Ketchup und Mayonnaise",
+        price: 8.9,
+      },
+    ],
+  },
+  {
+    id: "dessert",
+    label: "Dessert",
+    items: [
+      {
+        name: "Apfelstrudel",
+        description: "Mit Eis, Sahne, Vanillesauce und Schokosauce",
+        price: 9.5,
+      },
+      {
+        name: "Schmelzendes Herz",
+        description: "Schokotörtchen-Soufflé mit Eis und Sahne",
+        price: 9.5,
         tag: "Hausspezialität",
       },
     ],
   },
   {
-    id: "pfannengerichte",
-    label: "Pfannengerichte",
+    id: "extras",
+    label: "Extras",
     items: [
-      {
-        name: "Lammpfanne",
-        description: "Lammgeschnetzeltes, Paprika, Tomaten und Zwiebeln, dazu Reis oder Pommes und Salat",
-        price: 21.0,
-      },
-      {
-        name: "Hähnchenpfanne",
-        description: "Hähnchengeschnetzeltes, Paprika, Tomaten und Zwiebeln, dazu Reis oder Pommes und Salat",
-        price: 19.0,
-      },
-      { name: "Güvec Vegetarisch", description: "Mit Gemüse, dazu Reis oder Pommes und Salat", price: 17.0 },
-      { name: "Güvec Lamm", description: "Mit Lammfleisch, dazu Reis oder Pommes und Salat", price: 20.0 },
-    ],
-  },
-  {
-    id: "fisch",
-    label: "Fisch",
-    items: [
-      { name: "Dorade überbacken", description: "Dazu Reis oder Pommes und Salat", price: 23.0 },
-    ],
-  },
-  {
-    id: "nudeln",
-    label: "Nudeln",
-    items: [
-      { name: "Penne Napoli", description: "Mit Tomatensoße", price: 12.0 },
-      { name: "Penne Hähnchen", description: "Mit Tomatensoße", price: 15.0 },
-      { name: "Penne Drehspieß", description: "Mit Tomatensoße", price: 14.0 },
-      { name: "Penne Gemüse", description: "Mit Tomatensoße", price: 13.0 },
-    ],
-  },
-  {
-    id: "schnitzel",
-    label: "Schnitzel",
-    intro: "Alle Schnitzel werden mit Pommes und Salat serviert.",
-    items: [
-      { name: "Wiener Art Schnitzel", price: 15.0 },
-      { name: "Champignonrahm Schnitzel", price: 17.0 },
-      { name: "Rahmschnitzel", price: 17.0 },
-    ],
-  },
-  {
-    id: "fruehstueck",
-    label: "Frühstück",
-    items: [
-      {
-        name: "Frühstücksteller Türkischer Art",
-        description: "Mit Eiern, Honig, Marmelade, Oliven, Tomaten, Paprika, Käse, Mozzarella, dazu 1 Kaffee oder Tee",
-        price: 15.0,
-      },
-      { name: "Menemen – Türk. Eierspeise", price: 7.0 },
-      { name: "Sucuklu Menemen", description: "Mit Sucuk", price: 8.5 },
-    ],
-  },
-  {
-    id: "desserts",
-    label: "Desserts",
-    items: [
-      { name: "Baklava Portion", price: 7.0 },
-      { name: "Milchreis Türk. Art", price: 6.5 },
+      { name: "Senfsauce", price: 1.5 },
+      { name: "Pfeffersauce", price: 1.5 },
+      { name: "Mayonnaise", price: 4.5 },
+      { name: "Jägersauce", price: 4.5 },
+      { name: "Ketchup", price: 4.5 },
+      { name: "Pommes", price: 5.5 },
     ],
   },
 ];
 
 export const drinkCategories = [
   {
-    label: "Kalte Getränke",
+    label: "Alkoholfrei",
     items: [
-      "Cola, Cola Zero – 2,80 €",
-      "Fanta, Sprite – 2,80 €",
-      "Orangensaft – 2,80 €",
-      "Eistee – 2,80 €",
-      "Ayran – 3,00 €",
+      "Sprudelwasser",
       "Apfelschorle",
-      "Wasser (Uludag)",
-      "Redbull – 3,00 €",
+      "Cola",
+      "Limonade",
+      "Orangensaft",
+      "Apfelsaft",
+      "Bitter Lemon",
+      "Sprite",
+      "Eistee",
+      "Tonic",
     ],
   },
   {
     label: "Warme Getränke",
+    items: ["Kännchen Kaffee", "Kännchen Tee", "Glühwein", "Kakao", "Cappuccino"],
+  },
+  {
+    label: "Biere",
     items: [
-      "Kaffee – 3,00 €",
-      "Espresso – 2,80 €",
-      "Cappuccino – 4,50 €",
-      "Latte Macchiato – 4,50 €",
-      "Tee – 2,00 €",
-      "Türk. Kaffee – 3,00 €",
+      "Pils",
+      "Radler",
+      "Weizenbier",
+      "Alkoholfreies Weizen",
+      "Altbier",
+      "Leffe Blonde",
+      "Leffe Brune",
+    ],
+  },
+  { label: "Offene Weine", items: ["Weiß", "Rot", "Lambrusco"] },
+  {
+    label: "Aperitif",
+    items: [
+      "Campari",
+      "Campari Orange",
+      "Campari Soda",
+      "Sherry",
+      "Porto Rot/Weiß",
+      "Martini Rot/Weiß",
+      "Kir",
+      "Kir Royal",
+      "Sekt",
     ],
   },
   {
-    label: "Bier",
-    items: [
-      "Pils 0,2l/0,4l – 2,50 €",
-      "Radler 0,2l/0,4l – 2,50 €",
-      "Weißbier 0,5l – 4,50 €",
-      "Weißbier alkoholfrei 0,5l – 4,50 €",
-      "Pils Bitburger 0,3l – 3,00 €",
-      "Pils 0,4l – 4,00 €",
-      "Weizen – 4,00 €",
-      "Weizen alkoholfrei – 4,00 €",
-    ],
-  },
-  {
-    label: "Wein",
-    items: [
-      "Glühwein 0,2l – 4,00 €",
-      "Rotwein 0,2l – 7,90 €",
-      "Weißwein 0,2l – 7,90 €",
-      "Rosé Wein 0,2l – 7,90 €",
-      "Weißwein 0,25l – 4,90 €",
-      "Rotwein 0,25l – 4,90 €",
-      "Rosé 0,25l – 4,90 €",
-    ],
-  },
-  {
-    label: "Spirituosen",
-    items: ["Whiskey 4cl – 7,50 €", "Wodka 4cl – 6,90 €", "Raki 4cl – 6,90 €"],
+    label: "Digestif",
+    items: ["Sambuca", "Grappa", "Cointreau", "Ramazzotti", "Amaretto", "Doppel Korn"],
   },
 ];

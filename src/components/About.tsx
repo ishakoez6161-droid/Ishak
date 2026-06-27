@@ -6,16 +6,16 @@ import { Reveal, RevealGroup, RevealItem } from "./ui/Reveal";
 
 const highlights = [
   {
-    title: "Frisch vom Drehspieß",
-    text: "Unser Fleisch wird täglich frisch zubereitet und direkt vom Spieß geschnitten.",
+    title: "Hausgemachte Küche",
+    text: "Schnitzel, Saucen und Desserts werden täglich frisch nach eigenem Rezept zubereitet.",
   },
   {
-    title: "Hausgemacht",
-    text: "Soßen, Salate und Beilagen entstehen jeden Tag neu in unserer Küche.",
+    title: "Mitten in der Altstadt",
+    text: "Direkt am historischen Markt von Monschau, umgeben von Fachwerk und Kopfsteinpflaster.",
   },
   {
     title: "Für jeden Anlass",
-    text: "Vom schnellen Snack zwischendurch bis zum gemütlichen Essen mit Familie und Freunden.",
+    text: "Vom schnellen Mittagstisch bis zum gemütlichen Abend mit Freunden und Familie.",
   },
 ];
 
@@ -32,8 +32,8 @@ export function About() {
             className="relative aspect-[4/5] w-full overflow-hidden rounded-[1.75rem] shadow-2xl"
           >
             <Image
-              src="/images/innenraum.jpg"
-              alt="Gemütlicher Gastraum von Bal-Mondo 60 in Monschau"
+              src="/images/terrasse.jpg"
+              alt="Apfelstrudel, Waffel und Cappuccino auf der Terrasse der Stadtkrone in Monschau"
               fill
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="object-cover"
@@ -51,23 +51,26 @@ export function About() {
           </div>
           <Reveal delay={0.05}>
             <h2 className="font-display mt-4 text-balance text-4xl leading-[1.1] text-ink-900 sm:text-5xl">
-              Türkische Küche mit
-              <span className="italic text-gold-600"> Herz und Frische</span>
+              Tradition trifft auf
+              <span className="italic text-gold-600"> Genuss</span>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 text-base leading-relaxed text-ink-700/90 sm:text-lg">
-              Bal-Mondo 60 liegt in der Laufenstraße im Herzen von Monschau.
-              Bei uns treffen herzliche Gastfreundschaft und hausgemachte
-              Küche auf frische Zutaten — vom klassischen Drehspieß über
-              knusprige Pide bis hin zu Pizza, Pasta und Salaten.
+              Die Stadtkrone liegt im Herzen von Monschau, direkt am Markt
+              unter den historischen Fachwerkhäusern der Altstadt. Bei uns
+              treffen herzliche Gastfreundschaft und hausgemachte Küche auf
+              eine Atmosphäre, die man so nur selten findet — drinnen
+              gemütlich und stilvoll, draußen auf der Terrasse mitten im
+              Trubel der Altstadt.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
             <p className="mt-4 text-base leading-relaxed text-ink-700/90 sm:text-lg">
-              Ob schnell zum Mitnehmen oder gemütlich bei uns vor Ort — jedes
-              Gericht wird mit Sorgfalt und besten Zutaten zubereitet, damit
-              Sie sich rundum wohlfühlen.
+              Ob klassisches Schnitzel, frische Pasta oder ein Stück
+              Apfelstrudel zum Kaffee — jedes Gericht entsteht mit Sorgfalt
+              und besten Zutaten, serviert in einem Ambiente, das die
+              Geschichte Monschaus lebendig hält.
             </p>
           </Reveal>
 

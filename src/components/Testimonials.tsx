@@ -6,16 +6,16 @@ import { SectionHeading } from "./ui/SectionHeading";
 
 const values = [
   {
-    title: "Frisch zubereitet",
-    text: "Drehspieß, Soßen und Beilagen entstehen täglich frisch in unserer Küche.",
+    title: "Hausgemacht",
+    text: "Schnitzel, Saucen und Desserts entstehen frisch in unserer Küche.",
   },
   {
     title: "Herzlich",
-    text: "Persönlicher Service in familiärer Atmosphäre, jeden Tag von 09:00 bis 22:00 Uhr.",
+    text: "Persönlicher Service in familiärer Atmosphäre, vom Frühstück bis zum Abend.",
   },
   {
     title: "Mitten in Monschau",
-    text: "Bequem erreichbar in der Laufenstraße, mit Terrasse und gemütlichem Gastraum.",
+    text: "Direkt am Markt, umgeben von der historischen Fachwerk-Altstadt.",
   },
 ];
 
@@ -24,8 +24,8 @@ export function Testimonials() {
     <section id="bewertungen" className="relative bg-cream-100 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
         <SectionHeading
-          eyebrow="Was Gäste sagen"
-          title="Gäste schwärmen von Bal-Mondo 60"
+          eyebrow="Was Kunden sagen"
+          title="Gäste schwärmen von der Stadtkrone"
           description="Unsere aktuelle Bewertung auf Google — lesen Sie gerne die Erfahrungen anderer Gäste."
         />
 
@@ -42,12 +42,12 @@ export function Testimonials() {
                 <Star key={i} className="h-4 w-4 fill-gold-500 text-gold-500" />
               ))}
             </div>
-            <span className="font-display text-lg text-ink-900">4,7</span>
-            <span className="text-sm text-ink-700/70">275 Rezensionen auf Google</span>
+            <span className="font-display text-lg text-ink-900">4,6</span>
+            <span className="text-sm text-ink-700/70">auf Google</span>
           </div>
 
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Bal-Mondo+60+Laufenstraße+60+Monschau"
+            href="https://www.google.com/maps/search/?api=1&query=Stadtkrone+Café+Restaurant+Markt+2+Monschau"
             target="_blank"
             rel="noreferrer"
             className="group inline-flex items-center gap-2 text-sm font-semibold text-gold-700 transition-colors hover:text-gold-600"
