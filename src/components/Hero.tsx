@@ -3,7 +3,9 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { MapPin, Phone, Star } from "lucide-react";
 import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { getOpenStatus } from "@/data/hours";
+import { cn } from "@/lib/utils";
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -11,6 +13,13 @@ export function Hero() {
   const imageScale = useTransform(scrollYProgress, [0, 1], [1, 1.18]);
   const imageY = useTransform(scrollYProgress, [0, 1], [0, 80]);
   const contentOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
+
+  const [status, setStatus] = useState<ReturnType<typeof getOpenStatus> | null>(null);
+  useEffect(() => {
+    setStatus(getOpenStatus());
+    const interval = setInterval(() => setStatus(getOpenStatus()), 60_000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section
@@ -43,8 +52,18 @@ export function Hero() {
         >
           <Star className="h-3.5 w-3.5 fill-gold-400 text-gold-400" />
           4,7 · 275 Google-Rezensionen
-          <span className="h-1 w-1 rounded-full bg-gold-300/60" />
-          Täglich geöffnet · 09:00–22:00
+          {status && (
+            <>
+              <span className="h-1 w-1 rounded-full bg-gold-300/60" />
+              <span
+                className={cn(
+                  "h-1.5 w-1.5 rounded-full",
+                  status.isOpen ? "bg-emerald-400" : "bg-cream-100/40",
+                )}
+              />
+              {status.label}
+            </>
+          )}
         </motion.div>
 
         <motion.p

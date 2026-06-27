@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Bal-Mondo 60 Monschau",
   },
   description:
-    "Bal-Mondo 60 in der Laufenstraße 60 in Monschau: frischer Drehspieß, Pide, Pizza, Falafel und türkische Klassiker. Täglich geöffnet von 09:00 bis 22:00 Uhr.",
+    "Bal-Mondo 60 in der Laufenstraße 60 in Monschau: frischer Drehspieß, Pide, Pizza, Falafel und türkische Klassiker. Montag, Mittwoch bis Sonntag von 12:00 bis 21:00 Uhr geöffnet, dienstags Ruhetag.",
   keywords: [
     "Bal-Mondo 60",
     "Döner Monschau",
@@ -68,20 +68,21 @@ const jsonLd = {
     addressLocality: "Monschau",
     addressCountry: "DE",
   },
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday",
-    ],
-    opens: "09:00",
-    closes: "22:00",
-  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "12:00",
+      closes: "21:00",
+    },
+  ],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.7",

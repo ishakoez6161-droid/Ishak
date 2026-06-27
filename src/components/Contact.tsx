@@ -1,10 +1,20 @@
 "use client";
 
 import { Clock, MapPin, Phone } from "lucide-react";
+import { useEffect, useState } from "react";
+import { getOpenStatus, openingHours } from "@/data/hours";
+import { cn } from "@/lib/utils";
 import { Reveal } from "./ui/Reveal";
 import { SectionHeading } from "./ui/SectionHeading";
 
 export function Contact() {
+  const [status, setStatus] = useState<ReturnType<typeof getOpenStatus> | null>(null);
+  useEffect(() => {
+    setStatus(getOpenStatus());
+    const interval = setInterval(() => setStatus(getOpenStatus()), 60_000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="kontakt" className="relative bg-cream-50 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
@@ -41,14 +51,32 @@ export function Contact() {
                 </div>
                 <div className="flex gap-4">
                   <Clock className="h-5 w-5 flex-shrink-0 text-gold-400" />
-                  <div>
+                  <div className="w-full">
                     <p className="font-display text-lg">Öffnungszeiten</p>
-                    <p className="mt-1 text-sm text-cream-100/75">
-                      Täglich · 09:00 – 22:00 Uhr
-                    </p>
-                    <p className="mt-0.5 text-xs text-cream-100/50">
-                      Montag bis Sonntag durchgehend geöffnet.
-                    </p>
+                    {status && (
+                      <p className="mt-1 flex items-center gap-2 text-sm text-cream-100/75">
+                        <span
+                          className={cn(
+                            "h-1.5 w-1.5 rounded-full",
+                            status.isOpen ? "bg-emerald-400" : "bg-cream-100/40",
+                          )}
+                        />
+                        {status.label}
+                      </p>
+                    )}
+                    <ul className="mt-3 space-y-1">
+                      {openingHours.map((d) => (
+                        <li
+                          key={d.day}
+                          className="flex items-center justify-between gap-4 text-xs text-cream-100/60"
+                        >
+                          <span>{d.day}</span>
+                          <span className={d.hours === "Geschlossen" ? "text-cream-100/35" : ""}>
+                            {d.hours}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
